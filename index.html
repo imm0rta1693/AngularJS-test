@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html ng-app>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>An AngularJS test</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/themes/smoothness/jquery-ui.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<!--
+		// If JQuery 1.xx doesn't work, uncomment.
+		<script type="text/javascript" src="js/jquery-2.11.min"></script>
+		-->
+	</head>
+	<!-- BODY START -->
+	<body>
+		<div class="container">
+			<!-- HEADER -->
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<blockquote class="blockquote-reverse">
+					<h1>Welcome to this little site!</h1>
+				<footer>Let the testing begin! ;)</footer>
+			</blockquote>
+			<!-- Potential IMG or free space -->
+			<div id="free-space"></div>
+			<!-- CONTENT -->
+			<div class="row">
+				<div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+					<h3>As the light webpage layout may get to your eyes at some point, you can change it in the panel right.</h3>
+				</div>
+				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+					<button id="lightDark">Toggle Light/Dark</button>
+					<div><br /><h4>Re-route to another test page:</h4></div>
+					<div ng-app="js/angular.js">
+						<div ui-view>
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+								<a href="#"> Page 1 </a>
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+								<a href="#"> Page 2 </a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<h3 id="afterReveal">By doing so, you might find mistakes or makes things better to see, of which you don't on other colors.</h3>
+			</div>
+		</div>
+	</div>
+</body>
+<!-- ADDITIONAL SCRIPTS -->
+<script type="text/javascript" src="js/theme-dark.js"></script>
+<script type="text/javascript" src="js/theme-light.js"></script>
+</html>
